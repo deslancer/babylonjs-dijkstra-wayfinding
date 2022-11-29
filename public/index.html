@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Babylon.js wayfinding</title>
+    <meta name="description" content="">
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+
+        .select-container {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+        }
+
+        .select-container select {
+            margin: 0 20px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="select-container">
+    <label for="shop_start">From Shop</label>
+    <select name="" id="shop_start">
+        <option value="">A</option>
+        <option value="">H</option>
+        <option value="">G</option>
+        <option value="">B</option>
+        <option value="">C</option>
+        <option value="">D</option>
+        <option value="">E</option>
+        <option value="">F</option>
+    </select>
+    <label for="shop_end">To Shop</label>
+    <select name="" id="shop_end">
+        <option value="">A</option>
+        <option value="">H</option>
+        <option value="">G</option>
+        <option value="">B</option>
+        <option value="">C</option>
+        <option value="">D</option>
+        <option value="">E</option>
+        <option value="">F</option>
+    </select>
+    <button id="show_way">Show the way</button>
+</div>
+<canvas id="renderCanvas" touch-action="none"></canvas>
+</body>
+
+</html>
